@@ -1,33 +1,28 @@
-
 # Hacker-Rank-Challenges
 
-Projeto para guardar as implementações dos desafios do https://www.hackerrank.com feitos em Golang.
+Project to save the implementations of the https://www.hackerrank.com challenges made in Golang.
 
+## Installation
 
+Make sure you have Golang version **^1.21.3** installed on your machine.
 
-
-## Instalação
-
-Certifique-se de ter a versão **^1.21.3** do Golang instalada em sua máquina. 
-
-Após clonar o projeto, acesse a pasta e execute os seguintes comandos para que o Go reconheça o projeto e faça o download das dependências necessárias
+After cloning the project, go to the folder and run the following commands so that Go recognizes the project and downloads the necessary dependencies
 
 ```bash
   cd hacker-rank-challenges
   go mod download
   go mod tidy
 ```
-    
-## Stack utilizada
+
+## Stack used
 
 **Back-end:** Golang
 
+## Use/Examples
 
-## Uso/Exemplos
+To run a challenge, at the root of the project, in the 'main.go' file, import the desired package and call the only function in the package.
 
-Para executar um desafio, na raiz do projeto, no arquivo `main.go`, realize o import do pacote desejado e faça a chamada da única função existente no pacote. 
-
-Obs: Lembre-se de adicionar os inputs necessários para que a função execute corretamente e também algumas funções não efetuam o print da resposta final, então certifique-se de adicionar a função `fmt.Println()`.
+Note: Remember to add the necessary inputs for the function to perform correctly and also some functions don't print the final answer, so make sure to add the function `fmt.Println()`
 
 ```golang
 package main
@@ -39,23 +34,23 @@ import (
 
 func main() {
 	fmt.Println("Hacker Rank Challenges!!!")
-	
+
 	inputA := uint32(5)
 	inputB := uint32(10)
 	fmt.Println(solvemefirst.SumTwoNumbers(inputA, inputB))
 }
 ```
 
-Feito isso, basta executar no terminal na raiz do projeto, o seguinte comando:
+Once this is done, just run the following command in the terminal at the root of the project:
 
 ```bash
   go run main.go
 ```
 
 **Output**
+
 ```bash
 ❯ go run main.go
 Hacker Rank Challenges!!!
 15
 ```
-
