@@ -20,24 +20,36 @@ After cloning the project, go to the folder and run the following commands so th
 
 ## Use/Examples
 
-To run a challenge, at the root of the project, in the 'main.go' file, import the desired package and call the only function in the package.
-
-Note: Remember to add the necessary inputs for the function to perform correctly and also some functions don't print the final answer, so make sure to add the function `fmt.Println()`
+To run a challenge, in the 'main.go' file at the root of the project, uncomment the desired line and import 
 
 ```golang
 package main
 
 import (
 	"fmt"
+	// birthdaycakecandles "hacker-rank/birthday_cake_candles"
+	// comparethetriplets "hacker-rank/compare_the_triplets"
+	// diagonaldifference "hacker-rank/diagonal_difference"
+	// simplearraysum "hacker-rank/simple_array_sum"
 	solvemefirst "hacker-rank/solve_me_first"
+	// timeconversion "hacker-rank/time_conversion"
+	// verybigsum "hacker-rank/very_big_sum"
 )
 
 func main() {
 	fmt.Println("Hacker Rank Challenges!!!")
 
-	inputA := uint32(5)
-	inputB := uint32(10)
-	fmt.Println(solvemefirst.SumTwoNumbers(inputA, inputB))
+	// Uncomment the line below and the import to run the desired package and function
+	fmt.Println(solvemefirst.SumTwoNumbers())
+	// fmt.Println(simplearraysum.SumArray())
+	// fmt.Println(comparethetriplets.CompareTriplets())
+	// fmt.Println(verybigsum.VeryBigSum())
+	// fmt.Println(diagonaldifference.DiagonalDifference())
+	// plusminus.PlusMinus()
+	// staircase.Staircase()
+	// minimaxsum.MiniMaxSum()
+	// fmt.Println(birthdaycakecandles.BirthdayCakeCandles())
+	// fmt.Println(timeconversion.TimeConversion())
 }
 ```
 
@@ -52,5 +64,6 @@ Once this is done, just run the following command in the terminal at the root of
 ```bash
 ❯ go run main.go
 Hacker Rank Challenges!!!
-15
+5
 ```
+ Note: The entries used in the challenges are the entries suggested by the challenge itself in HackerRank 
