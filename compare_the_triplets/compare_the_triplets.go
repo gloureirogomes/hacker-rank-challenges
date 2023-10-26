@@ -1,15 +1,17 @@
 package comparethetriplets
 
-func CompareTriplets(a []int32, b []int32) []int32 {
+func CompareTriplets() []int32 {
+	aliceTriplets := []int32{5, 6, 7}
+	bobTriplets := []int32{3, 6, 10}
 	var alice int32 = 0
 	var bob int32 = 0
 
-	for i := 0; i < len(a); i++ {
-		if a[i] == b[i] {
+	for i := 0; i < len(aliceTriplets); i++ {
+		if aliceTriplets[i] == bobTriplets[i] {
 			continue
 		}
 
-		if a[i] > b[i] {
+		if aliceTriplets[i] > bobTriplets[i] {
 			alice++
 			continue
 		}

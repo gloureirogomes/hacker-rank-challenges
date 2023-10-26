@@ -4,8 +4,10 @@ import (
 	"time"
 )
 
-func TimeConversion(s string) string {
-	parsedTime, err := time.Parse("15:04:05PM", s)
+func TimeConversion() string {
+	input := "07:05:45PM"
+
+	parsedTime, err := time.Parse("15:04:05PM", input)
 	if err != nil {
 		return ""
 	}

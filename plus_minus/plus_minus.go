@@ -4,12 +4,14 @@ import (
 	"fmt"
 )
 
-func PlusMinus(arr []int32) {
+func PlusMinus() {
+	input := []int32{-4, 3, -9, 0, 4, 1}
+
 	positive := float64(0)
 	negative := float64(0)
 	zero := float64(0)
 
-	for _, value := range arr {
+	for _, value := range input {
 		if value > 0 {
 			positive++
 			continue
@@ -23,7 +25,7 @@ func PlusMinus(arr []int32) {
 		zero++
 	}
 
-	arraySize := float64(len(arr))
+	arraySize := float64(len(input))
 	positiveRatio := positive / arraySize
 	negativeRatio := negative / arraySize
 	zeroRatio := zero / arraySize
